@@ -49,7 +49,7 @@ app.get(`/users`, (req, res)=>{
     res.status(200).json(users); 
 
     
-app.get(`/users`, (req, res)=>{
+app.get(`/`, (req, res)=>{
     res.send(`Server is running!`)
 });
 
@@ -57,6 +57,7 @@ app.get(`/users`, (req, res)=>{
 app.listen(PORT, () =>{
     res.send(`Server is running at https://localhost:${PORT}`);
 });
+
 
 
 });
