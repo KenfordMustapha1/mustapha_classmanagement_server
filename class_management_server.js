@@ -55,9 +55,10 @@ app.get(`/`, (req, res)=>{
 
 
 app.listen(PORT, () =>{
-    res.send(`Server is running at https://localhost:${PORT}`);
+    console.log(`Server is running at https://localhost:${PORT}`);
 });
 
 
 
 });
+
