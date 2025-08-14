@@ -9,7 +9,7 @@ let users = [
     {id: 1, lastName: `Mustapha`, firstName:`Ken Ford`, section:`BSIT4A`, status:`a`},
 ];
 
-app.get(`/users`, (req, res)=>{
+app.post(`/users`, (req, res)=>{
 
 const {lastName, firstName, section, status} = req.body;
 
@@ -61,4 +61,7 @@ app.listen(PORT, () =>{
 
 
 });
+
+module.exports = app;
+
 
