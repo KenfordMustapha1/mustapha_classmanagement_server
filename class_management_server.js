@@ -13,7 +13,7 @@ app.post(`/users`, (req, res)=>{
 
 const {lastName, firstName, section, status} = req.body;
 
-const userIndex = users.findIndex(user=> user.lastName === lastName && user.firstName === firstName);
+const userIndex = users.findIndex(user=> user.firstName === firstName && user.lastName === lastName);
 
 if(userIndex !== -1){
 
@@ -63,5 +63,6 @@ app.listen(PORT, () =>{
 });
 
 module.exports = app;
+
 
 
